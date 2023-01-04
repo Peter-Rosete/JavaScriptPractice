@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The script src attribute</h1>
+
+<div id="wrapper">
+    <input type="text" value="OFF" readonly/>
+    <button type="button">Click Me</button>
+</div>
+
+<script>
+
+const buttonElem = document.querySelector("button");
+const inputElem = document.querySelector("input");
+
+console.log("This is the button = " + buttonElem.innerHTML);
+console.log("This is the input = " + inputElem.value);
+
+buttonElem.addEventListener('click', () => {
+  const oldText = inputElem.value;
+    return inputElem.value = oldText === "ON" ? "OFF" : "ON";
+});
+
+</script>
+
+</body>
+</html>

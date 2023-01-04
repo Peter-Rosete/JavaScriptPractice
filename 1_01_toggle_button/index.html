@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The script src attribute</h1>
+
+<button type="button" id="button">OFF</button>
+
+<script>
+    const buttonElem = document.getElementById("button");
+
+    buttonElem.addEventListener("click", function() {
+        const oldText = buttonElem.innerText;
+        return button.innerText = oldText === "ON" ? "OFF" : "ON";
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <input type="text" id="input" readonly/>
+        <button type="button" id="button">Click Me</button>
+
+    <script>
+    const button = document.getElementById('button');
+    const input = document.getElementById('input');
+    
+    const handleClick = () => {
+        input.value = 'Hello World';
+    };
+    
+    button.addEventListener('click', handleClick);
+    </script>
+
+    </body>
+</html>
